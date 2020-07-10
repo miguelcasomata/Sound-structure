@@ -43,7 +43,7 @@ The idea of my project is based on live coding by using Sonic Pi. Additionally, 
 
 
 
-use_bpm 100
+use_bpm 100 
 
 live_loop :drums do
 
