@@ -41,33 +41,61 @@ The idea of my project is based on live coding by using Sonic Pi. Additionally, 
 
 
 use_bpm 100
+
 live_loop :drums do
+
 sample :drum_heavy_kick
+
 sleep 1
+
 sample :drum_snare_hard
+
 sleep 1
+
 end
+
 live_loop :hithat do
+
 sample :drum_cymbal_closed
+
 sleep 0.5
+
 sample :drum_cymbal_pedal
+
 sleep 1
+
 end
+
 live_loop :keys do
+
 use_synth :dark_ambience
+
 play (scale :a2, :minor_pentatonic, num_octaves: 4).tick, release:20
+
 sleep 0.5
+
 end
+
 live_loop :bass do
+
 use_sythn :hoover
+
 play (chord :G2, :maj11).choose, release: 0.5
+
 sleep 2
+
 end
+
 live_loop :gui_e_slide do
+
 use_synth :blade
+
 play (chord :D2, :minor7).choose, release: 0.1
+
 sleep 2
+
 end
+
 
 - CONCLUSION
 
